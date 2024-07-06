@@ -1,0 +1,191 @@
+image orb images/orb.tga 7 7
+image dummy_img images/dummy.tga 24 16
+
+# Default body
+## idle
+image defbody_idle_u images/default_body/idle_u.tga 24 16
+image defbody_idle_r images/default_body/idle_r.tga 24 16
+image defbody_idle_d images/default_body/idle_d.tga 24 16
+frame defbody_idle defbody_idle_r defbody_idle_d _ defbody_idle_u
+sprite defbody_idle defbody_idle
+
+## walking up
+image defbody_walk_0_u images/default_body/walk0_u.tga 24 16
+image defbody_walk_1_u images/default_body/walk1_u.tga 24 16
+image defbody_walk_2_u images/default_body/walk2_u.tga 24 16
+image defbody_walk_3_u images/default_body/walk3_u.tga 24 16
+
+## walking right
+image defbody_walk_0_r images/default_body/walk0_r.tga 24 16
+image defbody_walk_1_r images/default_body/walk1_r.tga 24 16
+image defbody_walk_2_r images/default_body/walk2_r.tga 24 16
+image defbody_walk_3_r images/default_body/walk3_r.tga 24 16
+
+## walking down
+image defbody_walk_0_d images/default_body/walk0_d.tga 24 16
+image defbody_walk_1_d images/default_body/walk1_d.tga 24 16
+image defbody_walk_2_d images/default_body/walk2_d.tga 24 16
+image defbody_walk_3_d images/default_body/walk3_d.tga 24 16
+
+## walking frames
+frame defbody_walk_0 defbody_walk_0_r defbody_walk_0_d _ defbody_walk_0_u
+frame defbody_walk_1 defbody_walk_1_r defbody_walk_1_d _ defbody_walk_1_u
+frame defbody_walk_2 defbody_walk_2_r defbody_walk_2_d _ defbody_walk_2_u
+frame defbody_walk_3 defbody_walk_3_r defbody_walk_3_d _ defbody_walk_3_u
+
+## walking sprite
+sprite defbody_walk defbody_walk_0 defbody_walk_1 defbody_walk_2 defbody_walk_3
+
+# bandit
+## idle
+image bandit_idle_u images/bandit/idle-u.tga 24 16
+image bandit_idle_r images/bandit/idle-r.tga 24 16
+image bandit_idle_d images/bandit/idle-d.tga 24 16
+frame bandit_idle bandit_idle_r bandit_idle_d _ bandit_idle_u
+sprite bandit_idle bandit_idle
+
+## walking up
+image bandit_walk_u_0 images/bandit/walk-u-0.tga 24 16
+image bandit_walk_u_1 images/bandit/walk-u-1.tga 24 16
+image bandit_walk_u_2 images/bandit/walk-u-2.tga 24 16
+image bandit_walk_u_3 images/bandit/walk-u-3.tga 24 16
+
+## walking right
+image bandit_walk_r_0 images/bandit/walk-r-0.tga 24 16
+image bandit_walk_r_1 images/bandit/walk-r-1.tga 24 16
+image bandit_walk_r_2 images/bandit/walk-r-2.tga 24 16
+image bandit_walk_r_3 images/bandit/walk-r-3.tga 24 16
+
+## walking down
+image bandit_walk_d_0 images/bandit/walk-d-0.tga 24 16
+image bandit_walk_d_1 images/bandit/walk-d-1.tga 24 16
+image bandit_walk_d_2 images/bandit/walk-d-2.tga 24 16
+image bandit_walk_d_3 images/bandit/walk-d-3.tga 24 16
+
+## walking frames
+frame bandit_walk_0 bandit_walk_r_0 bandit_walk_d_0 _ bandit_walk_u_0
+frame bandit_walk_1 bandit_walk_r_1 bandit_walk_d_1 _ bandit_walk_u_1
+frame bandit_walk_2 bandit_walk_r_2 bandit_walk_d_2 _ bandit_walk_u_2
+frame bandit_walk_3 bandit_walk_r_3 bandit_walk_d_3 _ bandit_walk_u_3
+
+## walking sprite
+sprite bandit_walk bandit_walk_0 bandit_walk_1 bandit_walk_2 bandit_walk_3
+
+## aim
+image bandit_aim_u images/bandit/aim-u.tga 24 16
+image bandit_aim_r images/bandit/aim-r.tga 24 16
+image bandit_aim_d images/bandit/aim-d.tga 24 16
+image bandit_aim_l images/bandit/aim-l.tga 24 16
+frame bandit_aim bandit_aim_r bandit_aim_d bandit_aim_l bandit_aim_u
+sprite bandit_aim bandit_aim
+
+## walk with gun up
+image bandit_walk_gun_u_0 images/bandit/walkg-u-0.tga 24 16
+image bandit_walk_gun_u_1 images/bandit/walkg-u-1.tga 24 16
+image bandit_walk_gun_u_2 images/bandit/walkg-u-2.tga 24 16
+image bandit_walk_gun_u_3 images/bandit/walkg-u-3.tga 24 16
+
+## walk with gun right
+image bandit_walk_gun_r_0 images/bandit/walkg-r-0.tga 24 16
+image bandit_walk_gun_r_1 images/bandit/walkg-r-1.tga 24 16
+image bandit_walk_gun_r_2 images/bandit/walkg-r-2.tga 24 16
+image bandit_walk_gun_r_3 images/bandit/walkg-r-3.tga 24 16
+
+## walk with gun down
+image bandit_walk_gun_d_0 images/bandit/walkg-d-0.tga 24 16
+image bandit_walk_gun_d_1 images/bandit/walkg-d-1.tga 24 16
+image bandit_walk_gun_d_2 images/bandit/walkg-d-2.tga 24 16
+image bandit_walk_gun_d_3 images/bandit/walkg-d-3.tga 24 16
+
+## walk with gun frames
+frame bandit_walk_gun_0 bandit_walk_gun_r_0 bandit_walk_gun_d_0 _ bandit_walk_gun_u_0
+frame bandit_walk_gun_1 bandit_walk_gun_r_1 bandit_walk_gun_d_1 _ bandit_walk_gun_u_1
+frame bandit_walk_gun_2 bandit_walk_gun_r_2 bandit_walk_gun_d_2 _ bandit_walk_gun_u_2
+frame bandit_walk_gun_3 bandit_walk_gun_r_3 bandit_walk_gun_d_3 _ bandit_walk_gun_u_3
+
+## walk with gun sprite
+sprite bandit_walk_gun bandit_walk_gun_0 bandit_walk_gun_1 bandit_walk_gun_2 bandit_walk_gun_3
+
+## fire up
+image bandit_fire_u_0 images/bandit/shoot-u-0.tga 24 16
+image bandit_fire_u_1 images/bandit/shoot-u-1.tga 24 16
+image bandit_fire_u_2 images/bandit/shoot-u-2.tga 24 16
+
+## fire right
+image bandit_fire_r_0 images/bandit/shoot-r-0.tga 24 16
+image bandit_fire_r_1 images/bandit/shoot-r-1.tga 24 16
+image bandit_fire_r_2 images/bandit/shoot-r-2.tga 24 16
+
+## fire down
+image bandit_fire_d_0 images/bandit/shoot-d-0.tga 24 16
+image bandit_fire_d_1 images/bandit/shoot-d-1.tga 24 16
+image bandit_fire_d_2 images/bandit/shoot-d-2.tga 24 16
+
+## fire left
+image bandit_fire_l_0 images/bandit/shoot-l-0.tga 24 16
+image bandit_fire_l_1 images/bandit/shoot-l-1.tga 24 16
+image bandit_fire_l_2 images/bandit/shoot-l-2.tga 24 16
+
+## fire frames
+frame bandit_fire_0 bandit_fire_r_0 bandit_fire_d_0 bandit_fire_l_0 bandit_fire_u_0
+frame bandit_fire_1 bandit_fire_r_1 bandit_fire_d_1 bandit_fire_l_1 bandit_fire_u_1
+frame bandit_fire_2 bandit_fire_r_2 bandit_fire_d_2 bandit_fire_l_2 bandit_fire_u_2
+
+## fire sprite
+sprite bandit_fire bandit_fire_0 bandit_fire_1 bandit_fire_2
+
+## hit 
+image bandit_hit_u images/bandit/hit-u.tga 24 16
+image bandit_hit_r images/bandit/hit-r.tga 24 16
+image bandit_hit_d images/bandit/hit-d.tga 24 16
+image bandit_hit_l images/bandit/hit-l.tga 24 16
+frame bandit_hit bandit_hit_r bandit_hit_d bandit_hit_l bandit_hit_u
+sprite bandit_hit bandit_hit
+
+# textures
+#image big images/big.tga
+image tall_south images/tall_south.tga
+image default_wall images/default.tga
+image default_east images/default_east.tga
+image default_west images/default_west.tga
+image default_south images/default_south.tga
+image default_north images/default_north.tga
+image default_door_open images/default_door_o.tga
+image default_door_closed images/default_door_c.tga
+image gray_wall images/gray_wall.tga
+image gray_ceiling images/gray_ceiling.tga
+image wood_floor images/wood_floor.tga
+image green_door_o images/green_door_open.tga
+image green_door_c images/green_door.tga
+image orange_door_o images/orange_door_open.tga
+image orange_door_c images/orange_door.tga
+image purple_door_o images/purple_door_open.tga
+image purple_door_c images/purple_door.tga
+image cyan_door_o images/cyan_door_open.tga
+image cyan_door_c images/cyan_door.tga
+image metal_exit images/metal_door_exit.tga
+
+# hud
+image fp_pistol_aim images/fp-pistol.tga 48 90
+image fp_pistol_fire_0 images/fp-pistol-fire-0.tga 48 90
+image fp_pistol_fire_1 images/fp-pistol-fire-1.tga 48 90
+image fp_pistol_fire_2 images/fp-pistol-fire-2.tga 48 90
+
+# particles
+image bimpact_0 images/particles/bimp_0.tga 8 8
+image bimpact_1 images/particles/bimp_1.tga 8 8
+image bimpact_2 images/particles/bimp_2.tga 8 8
+image bimpact_3 images/particles/bimp_3.tga 8 8
+frame bimpact_f0 bimpact_0 bimpact_0 bimpact_0 bimpact_0
+frame bimpact_f1 bimpact_1 bimpact_1 bimpact_1 bimpact_1
+frame bimpact_f2 bimpact_2 bimpact_2 bimpact_2 bimpact_2
+frame bimpact_f3 bimpact_3 bimpact_3 bimpact_3 bimpact_3
+sprite bullet_impact bimpact_f0 bimpact_f1 bimpact_f2 bimpact_f3
+
+# items
+image healthpack images/healthpack.tga 12 -10
+image ammopack images/ammopack.tga 12 -10
+image green_keycard images/keycard_green.tga 12 -10
+image orange_keycard images/keycard_orange.tga 12 -10
+image purple_keycard images/keycard_purple.tga 12 -10
+image cyan_keycard images/keycard_cyan.tga 12 -10

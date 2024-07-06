@@ -1,0 +1,21 @@
+# Sets the size of a window
+#window_size 1920 1080
+#window_size 1280 1080
+#window_size 960 540
+#window_size 640 480
+#window_size 900 900
+window_size 1600 900
+resolution_height 480
+#resolution_height 480
+# Sets a keybind
+keybind forward 26
+keybind backward 22
+keybind strafe_right 7
+keybind strafe_left 4
+keybind exit 41
+keybind look_left 80
+keybind look_right 79
+keybind debug 9
+rendering_threads 16
+sensitivity 100
+field_of_view 90

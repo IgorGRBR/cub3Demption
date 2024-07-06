@@ -1,0 +1,71 @@
+cub D door wood_floor gray_ceiling green_door_o green_door_c 1 g
+cub k space wood_floor gray_ceiling object item keycard p
+cub d door wood_floor gray_ceiling orange_door_o orange_door_c 1 o
+cub 4 space wood_floor gray_ceiling object npc gunner 270 0
+cub P space wood_floor gray_ceiling object player 90
+cub V space wood_floor gray_ceiling object npc gunner 90 0
+cub y door wood_floor gray_ceiling purple_door_o purple_door_c 0 p
+cub K space wood_floor gray_ceiling object item keycard c
+cub 1 wall gray_wall gray_wall gray_wall gray_wall
+cub E exit metal_exit metal_exit metal_exit metal_exit
+cub A space wood_floor gray_ceiling object item ammo
+cub C space wood_floor gray_ceiling object item keycard g
+cub ^ space wood_floor gray_ceiling object npc gunner 270 3
+cub { space wood_floor gray_ceiling object npc gunner 180 0
+cub j door wood_floor gray_ceiling purple_door_o purple_door_c 1 p
+cub } space wood_floor gray_ceiling object npc gunner 0 0
+cub H space wood_floor gray_ceiling object item health
+cub 0 space wood_floor gray_ceiling
+cub c space wood_floor gray_ceiling object item keycard o
+cub Y door wood_floor gray_ceiling cyan_door_o cyan_door_c 0 c
+
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+  1111111111111111111111111111111111              
+  1000000V01HH100000000000100A00A001              
+  1000000001HH10000^00AAA01000000001111           
+  10000000010010^0000000001001001001001           
+  1EP00000000010000011110010000000H1C01           
+  100000000100000000100AA010000000H1101           
+  1000000001AA100000100AA01001110011101           
+  1000000401AA1000^A10{1111001000000001           
+  1111111111yy1000AA100000}001000000111           
+  100000000100111111100000}0010^00^01             
+  10000000010011111111111110010000001             
+  100000000100100HHHHHH00010011100111             
+  1000A0000100100HHHHHH00010010000001             
+  10^000^00j00D00000000000144100000A11111111111   
+  100000000j00100AAAAAA000100100000A1A00001H001   
+  1000^0A001HA100AAAAAA0001yy100000000010^10001   
+  10A0000001HA111111111111100100000010000000001   
+  10000000^11110000d00000000010000000001000^K11   
+  100^A00A0111A00011100000000100000010000000001   
+  10000000011A00H100010001100100000000010^10001   
+  10A0000111A00H10000E10000k{100000A1A00001H001   
+  100000011000H100000010000{H100000A11111111111   
+  100000000000100000001001111111Y1111             
+  100A000000010000111110000000000001              
+  1000000A000100000d000000000}000001              
+  1000000000010010010000000}00000001              
+  100000000c01000001AA0000000}000001              
+  100000000001000041AA00000000000001              
+  1111111111111111111111111111111111              
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  

@@ -1,0 +1,28 @@
+EA images/big.tga
+WE images/big.tga
+SO images/big.tga
+NO images/big.tga
+F 255,255,0
+C 0,0,255
+cub 1 wall default_east tall_south default_west default_north
+cub 1 wall default_east default_south default_west default_north
+cub 1 wall gray_wall gray_wall gray_wall gray_wall
+cub 0 space default_wall _
+cub 0 space wood_floor gray_ceiling
+cub P space default_wall _ object player 0
+cub P space default_wall gray_ceiling object player 180
+cub E exit metal_exit metal_exit metal_exit metal_exit
+cub D space default_wall _ object prop 270 dummy
+cub G space default_wall gray_ceiling object npc gunner 270 2
+cub B door wood_floor gray_ceiling green_door_o green_door_c 0 g
+cub H door wood_floor gray_ceiling green_door_o green_door_c 1 g
+cub K space default_wall gray_ceiling object item keycard g
+
+  11111
+  10K01111
+11000000001
+100100101B1
+100100H00P1
+E000G01111
+111111
+

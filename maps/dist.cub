@@ -1,0 +1,18 @@
+EA images/big.tga
+WE images/big.tga
+SO images/big.tga
+NO images/big.tga
+F 255,255,0
+C 0,0,255
+cub 1 wall default_east default_south default_west default_north
+cub 0 space default_wall default_wall
+cub P space default_wall _ object player 0
+cub P space default_wall _ object player 180
+cub E exit default_wall default_wall default_wall default_wall
+cub D space default_wall _ object prop 270 dummy
+cub O space default_wall _ object prop 270 orb
+
+111111111111111111111111111
+1DDDDDDDDDDDDDDDDDDDDDDDDD1
+1O00000000000000000000000P1
+111111111111111111111111111

@@ -1,0 +1,33 @@
+# Sets the size of a window
+#window_size 3840 2160
+#window_size 1920 1080
+#window_size 1280 1080
+#window_size 900 900
+window_size 1600 900
+
+# Absolute minimum
+#window_size 320 240
+#resolution_height 240
+
+# Proper settings
+#window_size 960 540
+resolution_height 480
+
+# Sets a keybind
+keybind forward 119
+keybind backward 115
+keybind strafe_right 100
+keybind strafe_left 97
+#keybind debug 113
+keybind exit 65307
+keybind look_left 65361
+keybind look_right 65363
+keybind debug 102
+keybind use 101
+keybind shoot 32 # 32 is space, rebind to 'e'
+
+# Other options
+rendering_threads 12
+sensitivity 100
+field_of_view 90
+mouselook 1
