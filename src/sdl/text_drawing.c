@@ -11,10 +11,8 @@
 /* ************************************************************************** */
 
 #if BACKEND == SDL
-# include "cub3d.h"
+# include "ydefines.h"
 # include "cub3d_generic.h"
-# include "sdl_backend.h"
-# include "ylib.h"
 # include <SDL2/SDL_surface.h>
 # include <SDL2/SDL_pixels.h>
 # include "SDL2/SDL_ttf.h"

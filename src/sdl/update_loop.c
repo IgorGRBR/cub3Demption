@@ -15,11 +15,12 @@
 # include "cub3d.h"
 # include "cub3d_core.h"
 # include "ymap.h"
-# include "yprint.h"
 # include "SDL2/SDL_events.h"
 # include <SDL2/SDL_events.h>
 # include <SDL2/SDL_scancode.h>
 
+// # include "yprint.h"
+		// yprintf("Key pressed %d\n", code);
 static void	keyboard_event(t_game *game, SDL_Event e)
 {
 	SDL_Scancode	code;
@@ -33,14 +34,18 @@ static void	keyboard_event(t_game *game, SDL_Event e)
 		gk = *gk_ptr;
 	if (e.type == SDL_KEYDOWN && !e.key.repeat)
 	{
-		yprintf("Key pressed %d\n", code);
 		game_key_pressed(game, gk);
 	}
 	else if (e.type == SDL_KEYUP)
 	{
-		yprintf("Key released %d\n", code);
 		game_key_released(game, gk);
 	}
+}
+
+static void	mouse_pressed_event(t_game *game, SDL_Event e)
+{
+	if (e.button.button> 0)
+		game_mouse_pressed(game, e.button.button);
 }
 
 static t_bool	handle_event(t_game *game, SDL_Event e)
@@ -49,6 +54,8 @@ static t_bool	handle_event(t_game *game, SDL_Event e)
 		return (game_deinit(game));
 	else if (e.type == SDL_KEYDOWN || e.type == SDL_KEYUP)
 		return (keyboard_event(game, e), TRUE);
+	else if (e.type == SDL_MOUSEBUTTONDOWN)
+		return (mouse_pressed_event(game, e), TRUE);
 	return (TRUE);
 }
 

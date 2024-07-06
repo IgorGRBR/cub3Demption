@@ -7,17 +7,19 @@ CFLAGS_DEBUG = -Wall -Wextra -Werror
 AR = ar -rc
 ifeq ($(UNAME),Linux)
 	# SDL Backend vars
-	# LFLAGS = -lSDL2 -lSDL2main -lSDL2_ttf -lm -L/usr/lib -lXext -lX11 -lm -lz -L/usr/lib
-	# BACKEND_PATH = ""
-	# EXT_DEFINES = -D LINUX -D BACKEND=SDL
+	LFLAGS = -lSDL2 -lSDL2main -lSDL2_ttf -lm -L/usr/lib -lXext -lX11 -lm -lz -L/usr/lib
+	BACKEND_PATH = ""
+	EXT_DEFINES = -D LINUX -D BACKEND=SDL
 
-	# MLX backend vars
-	LFLAGS = -lm -L/usr/lib -lXext -lX11 -lm -lz -L/usr/lib
-	BACKEND_PATH = minilibx-linux/
-	BACKEND_LIB = $(BACKEND_PATH)libmlx.a
-	COMPILE_BACKEND = 1
-	EXT_DEFINES = -D LINUX -D BACKEND=MLX
-	# EXT_DEFINES = -D LINUX -D BACKEND=MLX -D NO_MT_RENDERING
+	ifdef MLX
+		# MLX backend vars
+		LFLAGS = -lm -L/usr/lib -lXext -lX11 -lm -lz -L/usr/lib
+		BACKEND_PATH = minilibx-linux/
+		BACKEND_LIB = $(BACKEND_PATH)libmlx.a
+		COMPILE_BACKEND = 1
+		EXT_DEFINES = -D LINUX -D BACKEND=MLX
+		# EXT_DEFINES = -D LINUX -D BACKEND=MLX -D NO_MT_RENDERING
+	endif
 
 	EXT_INCLUDE = /usr/include
 	CC = cc

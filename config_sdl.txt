@@ -1,12 +1,11 @@
-# Sets the size of a window
-#window_size 1920 1080
-#window_size 1280 1080
-#window_size 960 540
-#window_size 640 480
-#window_size 900 900
+# Sets the size of a window and internal rendering resolution height
 window_size 1600 900
 resolution_height 480
-#resolution_height 480
+
+# Absolute minimum allowed values for windows and resolutions
+#window_size 320 240
+#resolution_height 240
+
 # Sets a keybind
 keybind forward 26
 keybind backward 22
@@ -16,6 +15,11 @@ keybind exit 41
 keybind look_left 80
 keybind look_right 79
 keybind debug 9
-rendering_threads 16
+keybind use 8
+keybind shoot 44
+
+# Other options
+rendering_threads 8
 sensitivity 100
 field_of_view 90
+mouselook 1

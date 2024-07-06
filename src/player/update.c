@@ -41,7 +41,6 @@ static void	handle_shooting(t_player *plr, t_scene *scene, double dt)
 	{
 		npc_get_hit(rs.hit_body.parent, 2, dvec2_scale(plr->actor->dir,
 				g_knockback_force * dt), (t_think_func)gunner_get_hit);
-		yprintf("Gocha!\n");
 	}
 	if (rs.hit)
 	{
@@ -70,7 +69,7 @@ static void	handle_interactions(t_player *plr, t_scene *scene, double dt)
 				|| (plr->keycards[(int)gn->data.door.type - 1]))
 				gn->data.door.open = !gn->data.door.open;
 			else
-				yprintf("can't open this door without matching keycard\n");
+				yprintf("Can't open this door without matching keycard\n");
 		}
 	}
 }

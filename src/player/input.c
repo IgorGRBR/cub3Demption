@@ -12,9 +12,7 @@
 
 #include "cub3d.h"
 #include "cub3d_core.h"
-#include "yprint.h"
 #include "yvec2.h"
-#include <stdio.h>
 
 void	player_key_pressed(t_player *plr, t_game_key key)
 {

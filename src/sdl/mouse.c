@@ -1,27 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   keybind.c                                          :+:      :+:    :+:   */
+/*   mouse.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ihhrabar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/09 16:29:32 by ihhrabar          #+#    #+#             */
-/*   Updated: 2024/05/09 16:29:37 by ihhrabar         ###   ########.fr       */
+/*   Created: 2024/06/21 14:31:12 by ihhrabar          #+#    #+#             */
+/*   Updated: 2024/06/21 14:31:13 by ihhrabar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #if BACKEND == SDL
-# include "cub3d_core.h"
-# include "ytypes.h"
+# include "cub3d_generic.h"
+# include "yvec2.h"
+# include <SDL2/SDL_mouse.h>
 
-t_uint	raw_key_hash(t_raw_key *i)
+t_ivec2	get_mouse_pos(t_wctx wctx)
 {
-	return ((t_raw_key)(*i));
+	int	x;
+	int	y;
+
+	(void)wctx;
+	SDL_GetMouseState(&x, &y);
+	return (ivec2_new(x, y));
 }
 
-t_bool	raw_key_eq(t_raw_key *a, t_raw_key *b)
+void	set_mouse_pos(t_wctx wctx, t_ivec2 pos)
 {
-	return (*a == *b);
+	SDL_WarpMouseInWindow(wctx.win, pos.x, pos.y);
+}
+
+void	set_cursor_visibile(t_wctx wctx, t_bool visible)
+{
+	(void)wctx;
+	SDL_ShowCursor((int)visible);
 }
 
 #endif

@@ -12,7 +12,6 @@
 
 #if BACKEND == MLX
 # include "cub3d_core.h"
-# include "yvec2.h"
 # include "cub3d.h"
 # include "ymap.h"
 // # include "yprint.h"

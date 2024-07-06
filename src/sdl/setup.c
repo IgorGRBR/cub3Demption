@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #if BACKEND == SDL
+# include "yprint.h"
 # include "cub3d.h"
-# include "ylib.h"
 # include <SDL2/SDL.h>
 # include <SDL2/SDL_ttf.h>
 # include "cub3d_generic.h"
@@ -30,12 +30,14 @@ t_bool	init_backend(t_game *game)
 	game->window_ctx.font = TTF_OpenFont(g_font_path, 12);
 	game->gfx = gfx_new(game->window_ctx, game->config.window_size,
 			game->rthread_count);
+	set_cursor_visibile(game->window_ctx, !game->config.mouselook);
 	return (TRUE);
 }
 
 t_bool	deinit_backend(t_game *game)
 {
 	yprintf("Deinitializing SDL backend...\n");
+	set_cursor_visibile(game->window_ctx, game->config.mouselook);
 	gfx_delete(game->gfx, game->window_ctx);
 	TTF_CloseFont(game->window_ctx.font);
 	destroy_window(game->window_ctx);

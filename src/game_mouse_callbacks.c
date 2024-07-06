@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "cub3d.h"
-#include "yprint.h"
 
 // yprintf("mouse movement: %d %d\n", delta.x, delta.y);
 void	game_mouse_move(t_game *game, t_ivec2 delta)
