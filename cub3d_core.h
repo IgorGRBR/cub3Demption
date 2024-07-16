@@ -122,18 +122,13 @@ typedef struct s_dvec2_pair
 }	t_dvec2_pair;
 
 // Transformation information. Used to specify transformations of images.
-// Rotation is currently not working.
+// Rotation is currently not working at all.
 typedef struct s_transform2d
 {
 	t_dvec2	pos;
 	double	rot;
 	t_dvec2	sca;
 }	t_transform2d;
-
-// TODO: Do we need this? Probably not...
-typedef struct s_transform3d
-{
-}	t_transform3d;
 
 // Struct representing a collection of assets. Contains maps of images and
 // sounds (TODO).
